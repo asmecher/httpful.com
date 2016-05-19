@@ -19,7 +19,7 @@
 
         <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     	<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
-    	<style type="text/css">
+    	<style type="dtext/css">
     	    @import url('css/main.css');
     	</style>
     </head>
@@ -197,7 +197,7 @@
                     $crt        = '/path/to/client/crt.pem';
                     $passphrase = 'for-your-key-if-needed';
 
-                    $response = \Httpful\Request::get($uri)
+                    $response = \Httpful\Request::delete($uri)
                         ->authenticateWithCert($cert, $key, $passphrase)
                         ->send();
                 </pre>
